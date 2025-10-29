@@ -57,11 +57,11 @@ Asegúrate de estar en la carpeta raíz del proyecto (`mkt_tp_final`) y ejecuta:
 Una vez activo el entorno, ejecuta los scripts de transformación en el orden correcto (Dimensiones antes que Hechos):
 
 ```bash
-
+# 1. Cargar y transformar todas las Dimensiones (Tiempo, Cliente, Producto, etc.)
 python src/dim_loader.py
-
+# 2. Construir FactVentas
 python src/fact_ventas.py
-
-
+# 3. Construir FactActividad
 python src/fact_actividad.py
+# 4. Construir FactNPS
 python src/fact_nps.py
