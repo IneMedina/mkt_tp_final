@@ -7,15 +7,15 @@ Este proyecto se enfoca en el diseño e implementación de un **mini-ecosistema 
 
 ## 🎯 Objetivos del Proyecto
 
-[cite_start]El ecosistema de datos está diseñado para monitorear los siguientes KPIs clave[cite: 6]:
+El ecosistema de datos está diseñado para monitorear los siguientes KPIs clave:
 
 * **Ventas** ($M) y **Ticket Promedio** ($K).
 * **Usuarios Activos** (nK).
-* [cite_start]**NPS** (Net Promoter Score)[cite: 6].
-* [cite_start]**Ventas por Provincia**[cite: 6].
-* [cite_start]**Ranking Mensual por Producto**[cite: 6].
+* **NPS** (Net Promoter Score).
+* **Ventas por Provincia**.
+* **Ranking Mensual por Producto**.
 
-> [cite_start]🚀 **Meta del Trimestre:** Crecer 15% en ventas en Córdoba y reducir los tiempos de entrega en Mendoza[cite: 56].
+.
 
 ---
 
@@ -23,12 +23,12 @@ Este proyecto se enfoca en el diseño e implementación de un **mini-ecosistema 
 
 | Carpeta | Contenido |
 | :--- | :--- |
-| **`RAW/`** | [cite_start]Datos fuente originales en formato `.CSV` (ventas, clientes, sesiones, etc.)[cite: 15]. |
+| **`RAW/`** | Datos fuente originales en formato `.CSV` (ventas, clientes, sesiones, etc.). |
 | **`src/`** | Scripts de Python (`.py`) para la lógica de **ETL (Extract, Transform, Load)**. |
 | **`DW/`** | Archivos de salida `.CSV` que representan el **Data Warehouse** (Tablas de Hechos y Dimensiones). |
 | **`Esquemas/`** | Diagramas del Modelo Estrella (FactVentas, FactActividad, FactNPS). |
 | **`venv/`** | Entorno virtual de Python (buenas prácticas). |
-| **`requirements.txt`**| [cite_start]Dependencias necesarias para ejecutar los scripts (principalmente `pandas`)[cite: 38]. |
+| **`requirements.txt`**| Dependencias necesarias para ejecutar los scripts (principalmente `pandas`). |
 
 ---
 
