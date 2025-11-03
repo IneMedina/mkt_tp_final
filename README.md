@@ -65,3 +65,22 @@ python src/fact_ventas.py
 python src/fact_actividad.py
 # 4. Construir FactNPS
 python src/fact_nps.py
+
+## 📂 Estructura del proyecto
+
+```bash
+mkt_tp_final/
+├── rAW/                      
+├── DW/    
+├── Esquemas                   
+├── DimCliente.py
+├── DimProducto.py
+├── DimCanal.py
+├── DimUbicacion.py
+├── DimTiempo.py
+├── Fact_Ventas.py
+├── Fact_Actividad.py
+├── Fact_NPS.py
+├── requirements.txt
+├── README.md
+└── assets/
