@@ -66,7 +66,7 @@ python src/fact_actividad.py
 # 4. Construir FactNPS
 python src/fact_nps.py
 
-## 📂 Estructura del proyecto
+### 📂 Estructura del proyecto
 
 ```bash
 mkt_tp_final/
