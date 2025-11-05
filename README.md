@@ -119,7 +119,7 @@ Aquí se presentan los esquemas estrella de las principales tablas de hechos del
 
 Un análisis detallado de cada producto vendido.
 
-![Esquema Fact_sales_order_item](Esquemas/Fact_sales_order_item_estrella.png)
+![Esquema Fact_sales_order_item](Esquemas/Fact_Sales_Order_Item_estrella.png)
 
 ---
 
@@ -143,7 +143,7 @@ Registro de sesiones y comportamiento en el sitio.
 
 Análisis de los pedidos completos.
 
-![Esquema Fact_sales_order](Esquemas/Fact_sales_order_estrella.png)
+![Esquema Fact_sales_order](Esquemas/Fact_Sales_Order_estrella.png)
 
 ## 🚀 Guía de Ejecución
 
