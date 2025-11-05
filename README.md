@@ -101,7 +101,7 @@ MKT_TP_FINAL/
 ## Hechos creados
 
 
-| **Tabla de Hecho**         | **Granularidad (Grano)** |
+| **Tabla de Hecho**          |  **Grano**                |
 |-----------------------------|---------------------------|
 | **Fact_NPS**                | Una fila en la tabla de hechos representa la calificación NPS (Net Promoter Score) específica proporcionada por un cliente en un momento dado (fecha)<br>y a través de un canal de encuesta particular. |
 | **Fact_Actividad**          | Una fila en la tabla de hechos representa una sesión de actividad única realizada por un cliente en una fecha específica,<br>registrando la fuente de tráfico (source) y el tipo de dispositivo (device) utilizado. |
@@ -109,7 +109,41 @@ MKT_TP_FINAL/
 | **Fact_sales_order**        | Una fila en la tabla de hechos representa un pedido de venta completo único (una orden) realizado en una fecha específica<br>y asociado a una tienda y una ubicación de envío/facturación. |
 
 
-Esquemas en /esquemas/.
+# 🌟 Modelos de Datos 
+
+Aquí se presentan los esquemas estrella de las principales tablas de hechos del Data Warehouse
+
+---
+
+## 1. Fact_sales_order_item (Ventas por Artículo)
+
+Un análisis detallado de cada producto vendido.
+
+![Esquema Fact_sales_order_item](Esquemas/Fact_sales_order_item_estrella.png)
+
+---
+
+## 2. Fact_NPS (Net Promoter Score)
+
+Medición de la satisfacción del cliente.
+
+![Esquema Fact_NPS](Esquemas/Fact_NPS_estrella.png)
+
+---
+
+## 3. Fact_Actividad (Actividad del Cliente)
+
+Registro de sesiones y comportamiento en el sitio.
+
+![Esquema Fact_Actividad](Esquemas/Fact_Actividad_estrella.png)
+
+---
+
+## 4. Fact_sales_order (Pedidos de Venta)
+
+Análisis de los pedidos completos.
+
+![Esquema Fact_sales_order](Esquemas/Fact_sales_order_estrella.png)
 
 ## 🚀 Guía de Ejecución
 
