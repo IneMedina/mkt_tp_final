@@ -146,7 +146,8 @@ guarda las tablas en DW/
 
 ### Fuentes
 
-Conectado directamente a los archivos .csv de la carpeta DW/
+Conectado directamente a los archivos .csv de la carpeta DW/.
+
 
 
 
