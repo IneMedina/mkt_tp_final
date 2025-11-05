@@ -137,7 +137,7 @@ Una vez activo el entorno, ejecuta los scripts de transformación en el orden co
 ```bash
     python main.py
 ```
-# Esto
+#### Esto
 lee los archivos de raw/
 transforma los datos
 guarda las tablas en DW/
