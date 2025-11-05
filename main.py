@@ -11,7 +11,9 @@ scripts = [
     "FactActividades.py",
     "FactNPS.py",
     "Factsalesorder.py",
-    "Factsalesorderitem.py"
+    "Factsalesorderitem.py",
+    "Factpayment.py",
+    "Factshipment.py"
 ]
 
 print("Iniciando ejecución del Data Warehouse...")
