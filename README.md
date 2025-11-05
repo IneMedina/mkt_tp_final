@@ -100,24 +100,13 @@ MKT_TP_FINAL/
 
 ## Hechos creados
 
-| Hecho                | Grano                       |
-| -------------------- | --------------------------- | 
-| FactSales_Order      | Ventas                      |
-| FactSales_Order_Item | Detalle y ranking productos | 
-| FactNPS              | NPS                         | 
-| FactActividades      | Usuarios activos            | 
-    ```bash
+
 | **Tabla de Hecho**         | **Granularidad (Grano)** |
 |-----------------------------|---------------------------|
 | **Fact_NPS**                | Una fila en la tabla de hechos representa la calificación NPS (Net Promoter Score) específica proporcionada por un cliente en un momento dado (fecha)<br>y a través de un canal de encuesta particular. |
 | **Fact_Actividad**          | Una fila en la tabla de hechos representa una sesión de actividad única realizada por un cliente en una fecha específica,<br>registrando la fuente de tráfico (source) y el tipo de dispositivo (device) utilizado. |
 | **Fact_sales_order_item**   | Una fila en la tabla de hechos representa un ítem o línea de producto única dentro de un pedido de venta,<br>detallando la cantidad y precio de un producto específico vendido a un cliente en una fecha determinada, a través de un canal, en una tienda y con una ubicación de envío/facturación asociada. |
 | **Fact_sales_order**        | Una fila en la tabla de hechos representa un pedido de venta completo único (una orden) realizado en una fecha específica<br>y asociado a una tienda y una ubicación de envío/facturación. |
- ```
-
-
-
-
 
 
 Esquemas en /esquemas/.
