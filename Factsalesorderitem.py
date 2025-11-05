@@ -8,10 +8,10 @@ os.makedirs('DW', exist_ok=True)
 orders = pd.read_csv('RAW/sales_order.csv')
 items = pd.read_csv('RAW/sales_order_item.csv')
 address = pd.read_csv('RAW/address.csv')
-province = pd.read_csv('RAW/province.csv')
 
 
-Fact_sales_order_item = items.merge(orders, on='order_id', how='left')
+
+Fact_sales_order_item = items.merge(orders, on='order_id', how='left', suffixes=["","_order"])
 
 
 Fact_sales_order_item = Fact_sales_order_item.merge(
@@ -22,11 +22,6 @@ Fact_sales_order_item = Fact_sales_order_item.merge(
 )
 
 
-Fact_sales_order_item = Fact_sales_order_item.merge(
-    province[['province_id', 'name']],
-    on='province_id',
-    how='left'
-)
 
 
 Fact_sales_order_item['date_id'] = pd.to_datetime(
@@ -34,22 +29,7 @@ Fact_sales_order_item['date_id'] = pd.to_datetime(
 ).dt.strftime('%Y%m%d').astype('Int64')
 
 
-Fact_sales_order_item = Fact_sales_order_item[[
-    'order_item_id',          
-    'order_id',
-    'date_id',               
-    'order_date',
-    'customer_id',
-    'channel_id',
-    'product_id',
-    'province_id',
-    'name',                  
-    'quantity',
-    'unit_price',
-    'discount_amount',
-    'line_total',
-    'total_amount'
-]]
+
 
 Fact_sales_order_item.to_csv('DW/fact_sales_order_item.csv', index=False)
 
