@@ -1,9 +1,9 @@
 
-# 📊 TP Final – Mini Data Warehouse & Dashboard Comercial
-# 👩‍💻 Carrera: Lic. en Ciencia de Datos
-# 🧠 Materia: Introducción al Marketing Online y Negocios Digitales
-# 📂 Proyecto: Ecosistema de datos EcoBottle AR
-## 📝 Introducción
+## 📊 TP Final – Mini Data Warehouse & Dashboard Comercial
+## 👩‍💻 Carrera: Lic. en Ciencia de Datos
+## 🧠 Materia: Introducción al Marketing Online y Negocios Digitales
+## 📂 Proyecto: Ecosistema de datos EcoBottle AR
+### 📝 Introducción
 
 Este proyecto implementa un **mini-ecosistema de datos comercial (online + offline)** para la empresa ficticia EcoBottle AR.
 El objetivo fue construir un Data Warehouse (DW) modelado en estrella y un **Dashboard**, siguiendo las mejores prácticas vistas en clase.
@@ -13,7 +13,7 @@ Se trabajó con datos RAW provistos en archivos .csv, los cuales fueron transfor
 
 ---
 
-## 🎯 Objetivos del Proyecto
+### 🎯 Objetivos del Proyecto
 
 Según la consigna del TP, se debían cumplir los siguientes puntos:
 
@@ -36,7 +36,7 @@ KPIs implementados en el dashboard:
 ✅ Ranking mensual por producto
 
 ---
-## 🧠 Caso de estudio: EcoBottle AR
+### 🧠 Caso de estudio: EcoBottle AR
 
 EcoBottle AR vende botellas reutilizables online y en tiendas físicas.
 Marketing genera tráfico vía redes sociales y email, y se envía NPS post-compra.
@@ -51,8 +51,8 @@ Los datos incluyen:
  Envíos
  Encuestas NPS
 
-## 🏗️ Arquitectura del Proyecto
-
+### 🏗️ Arquitectura del Proyecto
+  ```bash
 MKT_TP_FINAL/
 ├── raw/                
 ├── DW/                  
@@ -72,9 +72,9 @@ MKT_TP_FINAL/
 │   └── main.py         
 ├── requirements.txt
 └── README.md
+ ```
 
-
-## ⚙️ Estructura del Repositorio
+### ⚙️ Estructura del Repositorio
 
 | Carpeta | Contenido |
 | :--- | :--- |
@@ -86,8 +86,8 @@ MKT_TP_FINAL/
 | **`requirements.txt`**| Dependencias necesarias para ejecutar los scripts (principalmente `pandas`). |
 
 ---
-## ⭐ Modelado Estrella
-# Dimensiones creadas
+### ⭐ Modelado Estrella
+## Dimensiones creadas
 
 | Dimensión    | Contenido                       |
 | ------------ | ------------------------------- |
@@ -98,7 +98,7 @@ MKT_TP_FINAL/
 | DimTienda    | Tiendas físicas                 |
 | DimTiempo    | Año, mes, día                   |
 
-# Hechos creados
+## Hechos creados
 
 | Hecho                | KPI                         | Fuente           |
 | -------------------- | --------------------------- | ---------------- |
@@ -147,6 +147,8 @@ guarda las tablas en DW/
 ### Fuentes
 
 Conectado directamente a los archivos .csv de la carpeta DW/.
+
+### Dashboard
 
 
 
