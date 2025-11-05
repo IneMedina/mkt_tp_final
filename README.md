@@ -138,8 +138,8 @@ Una vez activo el entorno, ejecuta los scripts de transformación en el orden co
     python main.py
 ```
 #### Esto
-lee los archivos de raw/
-transforma los datos
+lee los archivos de raw/, 
+transforma los datos y
 guarda las tablas en DW/
 
 # 📊 Dashboard Power BI
