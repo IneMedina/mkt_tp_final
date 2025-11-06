@@ -26,14 +26,6 @@ Según la consigna del TP, se debían cumplir los siguientes puntos:
 | 5 | Dashboard conectado al DW                           | 
 | 6 | Entrega con README + requirements + entorno virtual | 
 
-KPIs implementados en el dashboard:
-
-✅ Ventas totales
-✅ Ticket promedio
-✅ Usuarios activos
-✅ NPS
-✅ Ventas por provincia
-✅ Ranking mensual por producto
 
 ---
 ### 🧠 Caso de estudio: EcoBottle AR
@@ -69,6 +61,8 @@ MKT_TP_FINAL/
 │   ├── FactActividades.py
 │   ├── FactSalesOrder.py
 │   ├── FactSalesOrderItem.py
+│   ├── Factpayment.py
+│   ├── Factshipment.py        
 │   └── main.py         
 ├── requirements.txt
 └── README.md
@@ -101,12 +95,14 @@ MKT_TP_FINAL/
 ## Hechos creados
 
 
-| **Tabla de Hecho**          |  **Grano**                |
+| **Tabla de Hecho**          |   **Grano**               |
 |-----------------------------|---------------------------|
 | **Fact_NPS**                | Una fila en la tabla de hechos representa la calificación NPS (Net Promoter Score) específica proporcionada por un cliente en un momento dado (fecha)<br>y a través de un canal de encuesta particular. |
 | **Fact_Actividad**          | Una fila en la tabla de hechos representa una sesión de actividad única realizada por un cliente en una fecha específica,<br>registrando la fuente de tráfico (source) y el tipo de dispositivo (device) utilizado. |
 | **Fact_sales_order_item**   | Una fila en la tabla de hechos representa un ítem o línea de producto única dentro de un pedido de venta,<br>detallando la cantidad y precio de un producto específico vendido a un cliente en una fecha determinada, a través de un canal, en una tienda y con una ubicación de envío/facturación asociada. |
 | **Fact_sales_order**        | Una fila en la tabla de hechos representa un pedido de venta completo único (una orden) realizado en una fecha específica<br>y asociado a una tienda y una ubicación de envío/facturación. |
+| **Fact_payment**            | Una fila en la tabla de hechos representa un pago único y específico (payment_id) realizado por un cliente para un pedido (order_id) en una fecha y hora determinadas,<br>asociado a un método de pago, un canal de venta, una tienda y una ubicación de facturación. |
+| **Fact_shipment**           | Una fila en la tabla de hechos representa un envío único (shipment_id) de un pedido (order_id), detallando la transportadora (carrier), el estado (status)<br>y las fechas de envío (shipped_at) y entrega (delivered_at), asociado a un cliente, un canal, una tienda y una ubicación de envío. |
 
 
 # 🌟 Modelos de Datos 
@@ -144,6 +140,23 @@ Registro de sesiones y comportamiento en el sitio.
 Análisis de los pedidos completos.
 
 ![Esquema Fact_sales_order](Esquemas/Fact_Sales_Order_estrella.png)
+
+---
+
+## 5. Fact_payment (Pagos)
+
+Registro detallado de cada transacción de pago.
+
+![Esquema Fact_payment](Esquemas/Fact_payment_estrella.png)
+
+---
+
+## 6. Fact_shipment (Envíos/Logística)
+
+Seguimiento y estado de cada proceso de envío.
+
+![Esquema Fact_shipment](Esquemas/Fact_shipment_estrella.png)
+
 
 ## 🚀 Guía de Ejecución
 
