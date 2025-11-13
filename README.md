@@ -73,7 +73,6 @@ MKT_TP_FINAL/
 | Carpeta | Contenido |
 | :--- | :--- |
 | **`RAW/`** | Datos fuente originales en formato `.CSV` (ventas, clientes, sesiones, etc.). |
-| **`src/`** | Scripts de Python (`.py`) para la lógica de **ETL (Extract, Transform, Load)**. |
 | **`DW/`** | Archivos de salida `.CSV` que representan el **Data Warehouse** (Tablas de Hechos y Dimensiones). |
 | **`Esquemas/`** | Diagramas del Modelo Estrella (FactVentas, FactActividad, FactNPS). |
 | **`venv/`** | Entorno virtual de Python (buenas prácticas). |
@@ -196,8 +195,9 @@ guarda las tablas en DW/
 
 Conectado directamente a los archivos .csv de la carpeta DW/.
 
-### Dashboard
+Para visualizar el tablero interactivo del proyecto, hacé clic en el siguiente enlace:
 
+👉 [Abrir tablero de Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzJhMDUxY2QtMTU4My00Njk5LWJhZmYtYmM2NGI4YzFiNjA3IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9&pageName=f0ae986916abe7232d28)
 
 
 
