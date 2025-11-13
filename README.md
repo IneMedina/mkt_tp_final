@@ -195,7 +195,7 @@ guarda las tablas en DW/
 
 Conectado directamente a los archivos .csv de la carpeta DW/.
 
-Para visualizar el tablero interactivo del proyecto, hacé clic en el siguiente enlace:
+Para visualizar los tableros interactivos del proyecto, hacé clic en el siguiente enlace:
 
 👉 [Abrir tableros de Power BI](https://app.powerbi.com/view?r=eyJrIjoiMzJhMDUxY2QtMTU4My00Njk5LWJhZmYtYmM2NGI4YzFiNjA3IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9&pageName=f0ae986916abe7232d28)
 
